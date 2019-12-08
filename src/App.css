@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+#header {
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  border-radius: 0px;
+}
+
+#myspace {
+  background: #f7d9a7;
+  color: D0803B;
+  font-size: 30px;
+  border-radius: 0px;
+}

@@ -6,7 +6,7 @@ const Network = () => {
     // <Header as="h3" block size="huge">
     //   <b>Syd Bailey</b> is in your extended network.
     // </Header>
-    <Segment color="black">
+    <Segment id="header">
       <Header size="huge">
         <b>Syd Bailey</b> is in your extended network.
       </Header>
