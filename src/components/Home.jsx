@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ProfilePic from "../containers/ProfilePic.jsx";
 import ContactMe from "../containers/ContactMe";
 import Network from "../containers/Network";
+import Blog from "../components/Blog";
 import background from "../background.jpg";
 import { Grid, Segment } from "semantic-ui-react";
 
@@ -19,6 +20,7 @@ export default class Home extends Component {
           <Grid.Column width={10}>
             <Segment basic padded="very">
               <Network />
+              <Blog />
             </Segment>
           </Grid.Column>
         </Grid>

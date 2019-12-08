@@ -19,7 +19,7 @@ function App() {
             <AboutMe />
           </Route>
           <Route path="/blog">
-            <Sample />
+            <Navbar />
             <Blog />
           </Route>
           <Route path="/projects">
