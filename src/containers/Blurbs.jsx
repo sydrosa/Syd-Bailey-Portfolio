@@ -16,7 +16,7 @@ const Blurbs = () => {
         Who I'd Like to Meet:
       </Header>
       <p>
-        Grace Hopper. She was{" "}
+        Grace Hopper and Ada Lovelace. She was{" "}
         <b>
           <i>badass.</i>
         </b>

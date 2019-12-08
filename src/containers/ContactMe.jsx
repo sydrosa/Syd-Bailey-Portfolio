@@ -7,7 +7,7 @@ import bookmarkicon from "../icons/bookmarkicon.png";
 
 const ContactMe = () => {
   return (
-    <>
+    <div id="details">
       <Segment attached="top" inverted color="blue" size="tiny">
         Contact Me
       </Segment>
@@ -27,7 +27,7 @@ const ContactMe = () => {
           </Grid.Column>
         </Grid>
       </Segment>
-    </>
+    </div>
   );
 };
 

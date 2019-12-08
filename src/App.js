@@ -11,32 +11,32 @@ import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
-    <>
+    <div style={{ backgroundColor: "#DDDDDD" }}>
+      <Navbar />
       <Router>
         <Switch>
           <Route path="/about">
-            <Navbar />
             <AboutMe />
           </Route>
           <Route path="/blog">
-            <Navbar />
+            {/* <Navbar /> */}
             <Blog />
           </Route>
           <Route path="/projects">
-            <Navbar />
+            {/* <Navbar /> */}
             <Projects />
           </Route>
           <Route path="/resume">
-            <Navbar />
+            {/* <Navbar /> */}
             <Resume />
           </Route>
           <Route exact path="/">
-            <Navbar />
+            {/* <Navbar /> */}
             <Home />
           </Route>
         </Switch>
       </Router>
-    </>
+    </div>
   );
 }
 
