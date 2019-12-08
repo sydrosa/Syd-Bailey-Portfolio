@@ -1,6 +1,6 @@
 import React from "react";
 import sydheadshot from "../sydheadshot.JPG";
-import { Segment, Image } from "semantic-ui-react";
+import { Image } from "semantic-ui-react";
 
 const ProfilePic = () => {
   return (
