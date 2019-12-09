@@ -12,8 +12,8 @@ import AboutMe from "./components/AboutMe";
 function App() {
   return (
     <div style={{ backgroundColor: "#DDDDDD" }}>
-      <Navbar />
       <Router>
+        <Navbar />
         <Switch>
           <Route path="/about">
             <AboutMe />
