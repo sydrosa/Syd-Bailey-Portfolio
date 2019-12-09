@@ -49,17 +49,23 @@ export default class Top8 extends Component {
     super();
   }
   render() {
-    console.log(dreamCompanies);
     return (
       <>
         <Header id="myspace">Syd Bailey's Dream Company Space (Top 8)</Header>
         <Card.Group itemsPerRow={4}>
           {dreamCompanies.map((company, index) => {
             return (
-              <Card>
+              <Card
+                style={{
+                  borderStyle: "solid",
+                  borderWidth: "1px",
+                  borderRadius: "0px",
+                  borderColor: "white"
+                }}
+              >
                 <Card.Content>
                   <Card.Header id="friends">{company.name}</Card.Header>
-                  <Image src={company.logo} id="logos" />
+                  <Image src={company.logo} id="logos" key={index} />
                 </Card.Content>
               </Card>
             );
