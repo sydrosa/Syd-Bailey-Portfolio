@@ -9,6 +9,7 @@ import CommentSection from "../components/CommentSection";
 // import background from "../background.jpg";
 import { Grid, Segment } from "semantic-ui-react";
 import Details from "../containers/Details.jsx";
+import Interests from "../containers/Interests.jsx";
 
 export default class Home extends Component {
   render() {
@@ -19,6 +20,7 @@ export default class Home extends Component {
             <Segment basic>
               <ProfilePic />
               <ContactMe />
+              <Interests />
               <Details />
             </Segment>
           </Grid.Column>

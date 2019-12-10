@@ -21,7 +21,7 @@ export default class Blog extends Component {
     console.log(this.state);
     return (
       <>
-        <Header as="h3">
+        <Header as="h3" style={{ fontFamily: "Verdana" }}>
           Syd's Latest Blog Entries [<a href="/">Subscribe to this Blog]</a>
         </Header>
         {/* <List>
