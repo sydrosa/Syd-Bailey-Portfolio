@@ -8,7 +8,7 @@ const ProfilePic = () => {
       <h1 style={{ fontFamily: "Verdana" }}>Syd Bailey</h1>
       <Modal
         trigger={
-          <Image src={sydheadshot} style={{ maxWidth: "50%" }} floated="left" />
+          <Image src={sydheadshot} style={{ maxWidth: "45%" }} floated="left" />
         }
         closeIcon
       >
@@ -24,12 +24,12 @@ const ProfilePic = () => {
         <br />
         She/Her/Hers
         <br />
-        Available to Relocate United States
+        Available to Relocate
         <br />
         <br />
         Last Login: Today
       </p>
-      <p>
+      <p floated="left">
         View my: <a href="https://github.com/sydbails/">Github</a> |{" "}
         <a href="https://www.linkedin.com/in/sydbailey">LinkedIn</a>
       </p>

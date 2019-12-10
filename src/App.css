@@ -1,5 +1,5 @@
 .App {
-  font-family: Verdana;
+  font-family: Verdana !important;
 }
 
 .App-logo {
@@ -73,13 +73,13 @@
   display: block;
 }
 
-#details {
+/* #details {
   font-family: Verdana;
   border-style: solid;
   border-color: black;
   border-width: 1px;
   border-radius: 0px;
-}
+} */
 
 #mainpage {
   font-family: Verdana;
@@ -90,7 +90,8 @@
 
 #messagegrid {
   font-family: Verdana;
-  background-color: #6ea8d4;
+  background-color: #72aad7;
+  padding: 5px;
 }
 
 #navbar {
@@ -107,6 +108,39 @@
 }
 
 #details {
-  background-color: #6ea8d4 !important;
+  font-family: Verdana;
+  background-color: #72aad7 !important;
   color: white;
+  border-radius: 0px;
+  border-style: none;
+}
+
+#nopadding {
+  padding: 0px;
+}
+
+#firstcolumnformat {
+  background-color: #bcd9f6;
+  color: #42668b;
+  border-color: white;
+  border-style: solid;
+  border-width: thick;
+  padding: 5px;
+}
+
+#secondcolumnformat {
+  background-color: #dceefa;
+  color: black;
+  border-color: white;
+  border-style: solid;
+  border-width: thick;
+  padding: 5px;
+}
+
+#pagecontainer {
+  padding: 0px;
+  border-style: solid;
+  border-color: #72aad7;
+  border-width: 3px;
+  border-radius: 0px;
 }
