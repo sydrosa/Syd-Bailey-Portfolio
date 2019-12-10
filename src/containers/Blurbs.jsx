@@ -4,7 +4,7 @@ import { Header } from "semantic-ui-react";
 const Blurbs = () => {
   return (
     <>
-      <Header id="myspace">Syd Bailey's Blurbs</Header>
+      <Header id="myspace">Syd's Blurbs</Header>
       <Header as="h4" id="title">
         About Me:
       </Header>

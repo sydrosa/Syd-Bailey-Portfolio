@@ -4,8 +4,8 @@ import { Grid, Segment } from "semantic-ui-react";
 const Details = () => {
   return (
     <>
-      <Segment attached="top" inverted color="blue" size="tiny" id="details">
-        Syd Bailey's Details
+      <Segment attached="top" size="tiny" id="details">
+        Syd's Details
       </Segment>
       <Segment attached="bottom">
         <Grid columns={2} celled="internally">

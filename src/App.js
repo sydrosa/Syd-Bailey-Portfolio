@@ -8,30 +8,30 @@ import Blog from "./components/Blog";
 import Sample from "./components/Sample";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import AboutMe from "./components/AboutMe";
+import Message from "./components/Message";
 
 function App() {
   return (
-    <div style={{ backgroundColor: "#DDDDDD" }}>
+    <div style={{ backgroundColor: "#DDDDDD" }} className="App">
       <Router>
         <Navbar />
         <Switch>
+          <Route path="/message">
+            <Message />
+          </Route>
           <Route path="/about">
             <AboutMe />
           </Route>
           <Route path="/blog">
-            {/* <Navbar /> */}
             <Blog />
           </Route>
           <Route path="/projects">
-            {/* <Navbar /> */}
             <Projects />
           </Route>
           <Route path="/resume">
-            {/* <Navbar /> */}
             <Resume />
           </Route>
           <Route exact path="/">
-            {/* <Navbar /> */}
             <Home />
           </Route>
         </Switch>

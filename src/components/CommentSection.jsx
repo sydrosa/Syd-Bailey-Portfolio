@@ -40,7 +40,7 @@ export default class CommentSection extends Component {
     console.log(comments);
     return (
       <React.Fragment>
-        <Header id="myspace">Syd Bailey's Professional Recommendations</Header>
+        <Header id="myspace">Syd's Professional Recommendations</Header>
         <Item.Group>
           {comments.map((comment, index) => {
             return (

@@ -7,8 +7,8 @@ const Network = () => {
     //   <b>Syd Bailey</b> is in your extended network.
     // </Header>
     <Segment id="header">
-      <Header size="huge">
-        <b>Syd Bailey</b> is in your extended network.
+      <Header size="large" style={{ fontFamily: "Verdana" }}>
+        <b>Syd</b> is in your extended network.
       </Header>
     </Segment>
   );

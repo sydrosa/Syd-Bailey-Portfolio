@@ -7,8 +7,8 @@ import bookmarkicon from "../icons/bookmarkicon.png";
 
 const ContactMe = () => {
   return (
-    <div id="details">
-      <Segment attached="top" inverted color="blue" size="tiny">
+    <div>
+      <Segment attached="top" id="details" size="tiny">
         Contact Me
       </Segment>
       <Segment attached="bottom">
