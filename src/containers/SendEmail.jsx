@@ -45,7 +45,7 @@ const SendEmail = () => {
             <b>Body:</b>
           </Grid.Column>
           <Grid.Column width={11}>
-            <TextArea fluid />
+            <TextArea fluid style={{ minHeight: 300 }} />
           </Grid.Column>
         </Grid.Row>
       </Grid>

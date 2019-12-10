@@ -9,9 +9,9 @@ const ContactMe = () => {
   return (
     <div>
       <Segment attached="top" id="details" size="tiny">
-        Contact Me
+        <b>Contact Me</b>
       </Segment>
-      <Segment attached="bottom">
+      <Segment attached="bottom" id="nopadding">
         <Grid columns={2}>
           <Grid.Column>
             <Image src={sendmessageicon} floated="left" />

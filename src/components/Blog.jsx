@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 // import { List } from "semantic-ui-react";
 import { Header } from "semantic-ui-react";
 
@@ -21,7 +22,7 @@ export default class Blog extends Component {
     console.log(this.state);
     return (
       <>
-        <Header as="h3" style={{ fontFamily: "Verdana" }}>
+        <Header as="h3" style={{ fontFamily: "Verdana " }}>
           Syd's Latest Blog Entries [<a href="/">Subscribe to this Blog]</a>
         </Header>
         {/* <List>
@@ -38,8 +39,8 @@ export default class Blog extends Component {
           })}
         </List> */}
 
-        <Header as="h3">
-          <a href="/">[View All Blog Entries]</a>
+        <Header as="h3" style={{ fontFamily: "Verdana " }}>
+          <Link to="/blog">[View All Blog Entries]</Link>
         </Header>
       </>
     );

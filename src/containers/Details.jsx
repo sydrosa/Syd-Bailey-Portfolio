@@ -5,60 +5,72 @@ const Details = () => {
   return (
     <>
       <Segment attached="top" size="tiny" id="details">
-        Syd's Details
+        <b>Syd's Details</b>
       </Segment>
-      <Segment attached="bottom">
+      <Segment attached="bottom" id="pagecontainer">
         <Grid columns={2} celled="internally">
           <Grid.Row>
-            <Grid.Column width="6">
+            <Grid.Column width="6" id="firstcolumnformat">
               <b>Status:</b>
             </Grid.Column>
-            <Grid.Column width="10">Actively Looking</Grid.Column>
+            <Grid.Column width="10" id="secondcolumnformat">
+              Actively Looking
+            </Grid.Column>
           </Grid.Row>
 
           <Grid.Row>
-            <Grid.Column width="6">
+            <Grid.Column width="6" id="firstcolumnformat">
               <b>Here For:</b>
             </Grid.Column>
-            <Grid.Column width="10">
+            <Grid.Column width="10" id="secondcolumnformat">
               Networking, Serious Opportunities, An Engineering Organization to
               Call My Own
             </Grid.Column>
           </Grid.Row>
 
           <Grid.Row>
-            <Grid.Column width="6">
+            <Grid.Column width="6" id="firstcolumnformat">
               <b>Hometown:</b>
             </Grid.Column>
-            <Grid.Column width="10">Brooklyn, NY</Grid.Column>
+            <Grid.Column width="10" id="secondcolumnformat">
+              Brooklyn, NY
+            </Grid.Column>
           </Grid.Row>
 
           <Grid.Row>
-            <Grid.Column width="6">
+            <Grid.Column width="6" id="firstcolumnformat">
               <b>Ethnicity:</b>
             </Grid.Column>
-            <Grid.Column width="10">Black</Grid.Column>
+            <Grid.Column width="10" id="secondcolumnformat">
+              Black
+            </Grid.Column>
           </Grid.Row>
 
           <Grid.Row>
-            <Grid.Column width="6">
+            <Grid.Column width="6" id="firstcolumnformat">
               <b>Gender:</b>
             </Grid.Column>
-            <Grid.Column width="10">Woman</Grid.Column>
+            <Grid.Column width="10" id="secondcolumnformat">
+              Woman
+            </Grid.Column>
           </Grid.Row>
 
           <Grid.Row>
-            <Grid.Column width="6">
+            <Grid.Column width="6" id="firstcolumnformat">
               <b>Zodiac Sign:</b>
             </Grid.Column>
-            <Grid.Column width="10">Leo</Grid.Column>
+            <Grid.Column width="10" id="secondcolumnformat">
+              Leo
+            </Grid.Column>
           </Grid.Row>
 
           <Grid.Row>
-            <Grid.Column width="6">
+            <Grid.Column width="6" id="firstcolumnformat">
               <b>Education:</b>
             </Grid.Column>
-            <Grid.Column width="10">Flatiron School</Grid.Column>
+            <Grid.Column width="10" id="secondcolumnformat">
+              Flatiron School
+            </Grid.Column>
           </Grid.Row>
         </Grid>
       </Segment>
