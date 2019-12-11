@@ -50,12 +50,12 @@ export default class SendEmail extends Component {
       <Form>
         <Grid celled>
           <Grid.Row>
-            <Grid.Column width={5} id="messagegrid">
+            <Grid.Column width={4} id="messagegrid">
               <p>
                 <b>To:</b>
               </p>
             </Grid.Column>
-            <Grid.Column width={11}>
+            <Grid.Column width={12}>
               <Label
                 image
                 style={{ fontFamily: "Verdana", backgroundColor: "#c4dff0" }}
@@ -66,20 +66,20 @@ export default class SendEmail extends Component {
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Column width={5} id="messagegrid">
+            <Grid.Column width={4} id="messagegrid">
               <p>
                 <b>Your Email:</b>
               </p>
             </Grid.Column>
-            <Grid.Column width={11}>
+            <Grid.Column width={12}>
               <Input fluid name="from" onChange={this.handleChange} />
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Column width={5} id="messagegrid">
+            <Grid.Column width={4} id="messagegrid">
               <b>Subject:</b>
             </Grid.Column>
-            <Grid.Column width={11}>
+            <Grid.Column width={12}>
               <Input
                 style={{ fontFamily: "Verdana" }}
                 fluid
@@ -90,10 +90,10 @@ export default class SendEmail extends Component {
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Column width={5} id="messagegrid">
+            <Grid.Column width={4} id="messagegrid">
               <b>Body:</b>
             </Grid.Column>
-            <Grid.Column width={11}>
+            <Grid.Column width={12}>
               <TextArea
                 placeholder="--------------------------"
                 fluid="true"
@@ -104,7 +104,9 @@ export default class SendEmail extends Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        <Button onSubmit={this.handleSubmit}>Send</Button>
+        <Button id="sendButton" onSubmit={this.handleSubmit}>
+          Send
+        </Button>
       </Form>
     );
   }
