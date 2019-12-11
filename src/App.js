@@ -4,11 +4,10 @@ import Home from "./components/Home";
 import Navbar from "./containers/Navbar";
 import Resume from "./containers/Resume";
 import Projects from "./components/Projects";
-import Blog from "./components/Blog";
-import Sample from "./components/Sample";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AboutMe from "./components/AboutMe";
 import Message from "./components/Message";
+import Blog from "./components/Blog";
 
 function App() {
   return (
