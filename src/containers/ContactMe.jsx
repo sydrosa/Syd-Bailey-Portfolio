@@ -8,16 +8,16 @@ import bookmarkicon from "../icons/bookmarkicon.png";
 const ContactMe = () => {
   return (
     <div>
-      <Segment attached="top" id="details" size="tiny">
+      <Segment attached="top" id="details">
         <b>Contact Me</b>
       </Segment>
-      <Segment attached="bottom" id="nopadding">
+      <Segment attached="bottom">
         <Grid columns={2}>
           <Grid.Column>
             <Image src={sendmessageicon} floated="left" />
-            <p floated="right">Email Me</p>
+            <p floated="right">Github</p>
             <Image src={linkedinmessageicon} floated="left" />
-            <p floated="right">Connect on LinkedIn</p>
+            <p floated="right">LinkedIn</p>
           </Grid.Column>
           <Grid.Column>
             <Image src={forwardmessageicon} floated="left" />

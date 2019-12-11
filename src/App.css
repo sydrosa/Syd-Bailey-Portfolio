@@ -52,12 +52,16 @@
   color: #d0803b;
   padding: 5px;
   border-radius: 0px;
+  margin-top: 1px;
 }
 
 #title {
   font-family: Verdana;
   color: #d0803b;
   font-weight: bold;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 #friends {
@@ -87,6 +91,7 @@
   margin-left: 10%;
   margin-right: 10%;
   background-color: white;
+  -webkit-margin-top-collapse: discard;
 }
 
 #messagegrid {
@@ -100,6 +105,7 @@
   background-color: #0049ab;
   border-radius: 0px;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #topofpage {

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ProfilePic from "../containers/ProfilePic.jsx";
 import ContactMe from "../containers/ContactMe";
 import Network from "../containers/Network";
-import Blog from "../components/Blog";
+import BlogSnippet from "./BlogSnippet";
 import Top8 from "../components/Top8";
 import Blurbs from "../containers/Blurbs";
 import CommentSection from "../components/CommentSection";
@@ -27,7 +27,7 @@ export default class Home extends Component {
           <Grid.Column width={10}>
             <Segment basic>
               <Network />
-              <Blog />
+              <BlogSnippet />
               <Blurbs />
               <Top8 />
               <CommentSection />
