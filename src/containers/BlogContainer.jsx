@@ -1,15 +1,26 @@
 import React from "react";
-import { Container, Header } from "semantic-ui-react";
+import { Container, Header, Image } from "semantic-ui-react";
 
 const BlogContainer = props => {
-  console.log(props);
   return (
     <>
       {props.blogs.map(blog => {
         return (
-          <Container>
-            <Header id="myspace">I'm working!</Header>
-          </Container>
+          <>
+            <Header id="myspace" style={{ paddingBottom: "10px" }}>
+              {blog.pubDate}
+            </Header>
+            <Container>
+              <Header as="h4" id="title">
+                {blog.title}
+              </Header>
+              <Image src={blog.thumbnail} size="medium" floated="left" />
+              <p style={{ minHeight: "200px" }}>
+                {props.stripHtml(blog.content.substring(0, 500))}
+                <a href={blog.link}>.....</a>
+              </p>
+            </Container>
+          </>
         );
       })}
     </>

@@ -8,14 +8,14 @@ const Blurbs = () => {
       <Header as="h4" id="title">
         About Me:
       </Header>
-      <p>
+      <p style={{ padding: "5px" }}>
         Stuff about me will go in this section. I will give a brief introduction
         about myself and what I love to do.
       </p>
       <Header as="h4" id="title">
         Who I'd Like to Meet:
       </Header>
-      <p>
+      <p style={{ padding: "5px" }}>
         Grace Hopper and Ada Lovelace. She was{" "}
         <b>
           <i>badass.</i>

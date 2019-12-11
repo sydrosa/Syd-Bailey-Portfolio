@@ -18,6 +18,13 @@ export default class BlogSnippet extends Component {
         this.setState({ blogs: resp.items });
       });
   }
+
+  stripHtml = html => {
+    let temporalDivElement = document.createElement("div");
+    temporalDivElement.innerHTML = html;
+    return temporalDivElement.textContent || temporalDivElement.innerText || "";
+  };
+
   render() {
     console.log(_.isEmpty(this.state.blogs), this.state.blogs);
     return (
@@ -25,7 +32,7 @@ export default class BlogSnippet extends Component {
         {_.isEmpty(this.state.blogs) ? (
           <BlogLoading />
         ) : (
-          <BlogContainer blogs={this.state.blogs} />
+          <BlogContainer blogs={this.state.blogs} stripHtml={this.stripHtml} />
         )}
       </div>
     );
