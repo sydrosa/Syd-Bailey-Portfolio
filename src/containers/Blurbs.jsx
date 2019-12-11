@@ -9,8 +9,13 @@ const Blurbs = () => {
         About Me:
       </Header>
       <p style={{ padding: "5px" }}>
-        Stuff about me will go in this section. I will give a brief introduction
-        about myself and what I love to do.
+        Curious and compassionate Full-Stack Engineer with a passion for
+        developing user-friendly web applications and solving complex problems.
+        With experience in Ruby on Rails, React, Redux, and JavaScript based
+        programming and a background in diversity & inclusion, I became
+        passionate about bridging the gap between technology and inclusive
+        products. I bring strong skills in project management/SCRUM, Strategy
+        and leadership alongside my technical skills.
       </p>
       <Header as="h4" id="title">
         Who I'd Like to Meet:

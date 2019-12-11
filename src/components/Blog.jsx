@@ -26,7 +26,6 @@ export default class BlogSnippet extends Component {
   };
 
   render() {
-    console.log(_.isEmpty(this.state.blogs), this.state.blogs);
     return (
       <div id="mainpage">
         {_.isEmpty(this.state.blogs) ? (

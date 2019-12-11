@@ -88,8 +88,8 @@
 
 #mainpage {
   font-family: Verdana;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
   background-color: white;
   -webkit-margin-top-collapse: discard;
 }
@@ -109,6 +109,7 @@
 }
 
 #topofpage {
+  padding-top: 30px;
   margin-bottom: 0px;
   background-color: #0049ab;
   border-radius: 0px;
@@ -167,4 +168,9 @@
   font-size: small;
   font-weight: 200;
   color: black;
+}
+
+#imageicons {
+  margin-bottom: 0px;
+  margin-right: 0px;
 }

@@ -13,7 +13,10 @@ const ProfilePic = () => {
         closeIcon
       >
         <Modal.Content image>
-          <Image src={sydheadshot} />
+          <Image
+            src={sydheadshot}
+            style={{ marginRight: "0px", marginBottom: "0px" }}
+          />
         </Modal.Content>
       </Modal>
 

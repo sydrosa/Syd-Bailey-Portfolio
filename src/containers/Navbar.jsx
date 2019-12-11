@@ -9,6 +9,7 @@ import {
 } from "semantic-ui-react";
 import { Link, NavLink, withRouter } from "react-router-dom";
 import whitemyspace from "../icons/whitemyspace.png";
+import smiling from "../icons/smiling.png";
 
 const icons = [
   "smile",
@@ -27,7 +28,6 @@ const icons = [
 
 class Navbar extends Component {
   state = {
-    status: "Change your status here!",
     mood: "Choose your mood here!",
     activeItem: "",
     currentIcon: "smile"
@@ -54,7 +54,8 @@ class Navbar extends Component {
                 style={{
                   color: "white",
                   fontFamily: "arial",
-                  fontSize: "10px"
+                  fontSize: "10px",
+                  minWidth: "200px"
                 }}
               >
                 A place for Syd to find a job.
@@ -66,16 +67,16 @@ class Navbar extends Component {
               display: "inline-block",
               padding: "0 20px",
               verticalAlign: "top",
-            fontSize: "10px",
-            color: "white"
+              fontSize: "10px",
+              color: "white"
             }}
           >
+            <Image src={smiling} floated="left" />
             <p style={{ margin: "0px" }}>
               <b>Status: </b>
-              {this.state.status}
-              <Link>Change here.</Link>
+              <i>Looking to hire Syd for my org.</i>
             </p>
-            <p style={{ margin: "0px" }}>
+            <p style={{ margin: "0px", whiteSpace: "nowrap" }}>
               <b>Mood: </b>
               {this.state.mood}{" "}
               {/* <Dropdown>
@@ -106,22 +107,6 @@ class Navbar extends Component {
           <Menu.Item
             style={{ color: "white" }}
             as={NavLink}
-            to="/resume"
-            name="Resume"
-            active={activeItem === "resume"}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            style={{ color: "white" }}
-            as={NavLink}
-            to="/projects"
-            name="Projects"
-            active={activeItem === "projects"}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            style={{ color: "white" }}
-            as={NavLink}
             to="/message"
             name="Messages"
             active={activeItem === "messages"}
@@ -133,6 +118,22 @@ class Navbar extends Component {
             to="/blog"
             name="Blog"
             active={activeItem === "blogs"}
+            onClick={this.handleItemClick}
+          />
+          <Menu.Item
+            style={{ color: "white" }}
+            as={NavLink}
+            to="/resume"
+            name="Resume"
+            active={activeItem === "resume"}
+            onClick={this.handleItemClick}
+          />
+          <Menu.Item
+            style={{ color: "white" }}
+            as={NavLink}
+            to="/projects"
+            name="Projects"
+            active={activeItem === "projects"}
             onClick={this.handleItemClick}
           />
         </Menu>

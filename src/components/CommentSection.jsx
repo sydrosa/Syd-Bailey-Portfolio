@@ -5,13 +5,13 @@ import Faker from "faker";
 const comments = [
   {
     image: Faker.image.avatar(),
-    // datetime: Faker.date.recent(),
+    datetime: Faker.date.weekday(),
     fullName: Faker.name.findName(),
     content: "Some stuff will go here. Random stuff. Comment stuff."
   },
   {
     image: Faker.image.avatar(),
-    // datetime: Faker.date.recent(),
+    datetime: Faker.date.weekday(),
     fullName: Faker.name.findName(),
     content: "Some stuff will go here. Random stuff. Comment stuff."
   },
@@ -23,31 +23,31 @@ const comments = [
   },
   {
     image: Faker.image.avatar(),
-    // datetime: Faker.date.recent(),
+    datetime: Faker.date.weekday(),
     fullName: Faker.name.findName(),
     content: "Some stuff will go here. Random stuff. Comment stuff."
   },
   {
     image: Faker.image.avatar(),
-    // datetime: Faker.date.recent(),
+    datetime: Faker.date.weekday(),
     fullName: Faker.name.findName(),
     content: "Some stuff will go here. Random stuff. Comment stuff."
   },
   {
     image: Faker.image.avatar(),
-    // datetime: Faker.date.recent(),
+    datetime: Faker.date.weekday(),
     fullName: Faker.name.findName(),
     content: "Some stuff will go here. Random stuff. Comment stuff."
   },
   {
     image: Faker.image.avatar(),
-    // datetime: Faker.date.recent(),
+    datetime: Faker.date.weekday(),
     fullName: Faker.name.findName(),
     content: "Some stuff will go here. Random stuff. Comment stuff."
   },
   {
     image: Faker.image.avatar(),
-    // datetime: Faker.date.recent(),
+    datetime: Faker.date.weekday(),
     fullName: Faker.name.findName(),
     content: "Some stuff will go here. Random stuff. Comment stuff."
   }
@@ -62,7 +62,7 @@ export default class CommentSection extends Component {
         <Item.Group>
           {comments.map((comment, index) => {
             return (
-              <Item>
+              <Item style={{ fontFamily: "verdana " }}>
                 <Item.Image size="tiny" src={comment.image} />
                 <Item.Content>
                   <Item.Header>{comment.fullName}</Item.Header>

@@ -1,9 +1,11 @@
 import React from "react";
+import { Image } from "semantic-ui-react";
+import SydResume from "../resume/SydBaileyResume12.11.png";
 
 const Resume = () => {
   return (
     <div id="mainpage">
-      <h1>Hi I'm working!</h1>
+      <Image src={SydResume} />
     </div>
   );
 };
