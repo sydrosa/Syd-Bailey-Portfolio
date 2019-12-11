@@ -1,5 +1,6 @@
 .App {
   font-family: Verdana !important;
+  font-size: 12px;
 }
 
 .App-logo {
@@ -143,4 +144,21 @@
   border-color: #72aad7;
   border-width: 3px;
   border-radius: 0px;
+}
+
+#composeButton {
+  border-radius: 3px;
+  background-color: #f7de4d;
+  font-family: Verdana;
+  font-size: small;
+  font-weight: 200;
+  color: black;
+}
+
+#sendButton {
+  border-radius: 3px;
+  font-family: Verdana;
+  font-size: small;
+  font-weight: 200;
+  color: black;
 }
