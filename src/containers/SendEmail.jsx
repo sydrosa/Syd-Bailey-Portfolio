@@ -1,5 +1,14 @@
 import React, { Component } from "react";
-import { Grid, Input, TextArea, Form, Label, Button } from "semantic-ui-react";
+import {
+  Grid,
+  Input,
+  TextArea,
+  Form,
+  Label,
+  Button,
+  Modal,
+  Header
+} from "semantic-ui-react";
 import sydheadshot from "../sydheadshot.JPG";
 import * as emailjs from "emailjs-com";
 
@@ -21,33 +30,39 @@ export default class SendEmail extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    const { to, from, subject, body } = this.state;
-    let templateParams = {
-      from_name: from,
-      to_name: to,
-      subject: subject,
-      message_html: body
-    };
-    emailjs.send(
-      "gmail",
-      "template_GsqBmIod",
-      templateParams,
-      "user_1hfmetEtwXTcvDm43YPN2"
-    );
-    this.resetForm();
+    //     const { to, from, subject, body } = this.state;
+    //     let service_id = "default_service";
+    //     let templateParams = {
+    //       from_name: from,
+    //       to_name: to,
+    //       subject: subject,
+    //       message_html: body
+    //     };
+    //     emailjs
+    //       .send(
+    //         service_id,
+    //         "template_GsqBmIod",
+    //         templateParams,
+    //         "user_1hfmetEtwXTcvDm43YPN2"
+    //       )
+    //       .then(resp => {
+    //         console.log(resp);
+    //       });
+
+    //     this.resetForm();
+    //   };
+    //   resetForm() {
+    //     this.setState({
+    //       from: "",
+    //       subject: "",
+    //       body: ""
+    //     });
   };
-  resetForm() {
-    this.setState({
-      from: "",
-      subject: "",
-      body: ""
-    });
-  }
 
   render() {
     // console.log(this.state);
     return (
-      <Form>
+      <Form onSubmit={this.handleSubmit}>
         <Grid celled>
           <Grid.Row>
             <Grid.Column width={4} id="messagegrid">
@@ -104,9 +119,21 @@ export default class SendEmail extends Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        <Button id="sendButton" onSubmit={this.handleSubmit}>
-          Send
-        </Button>
+        <Modal trigger={<Button id="sendButton">Send</Button>} closeIcon>
+          <Header
+            style={{ fontFamily: "Verdana " }}
+            icon="thumbs up"
+            content="Your Message Has Been Sent!"
+          />
+          <Modal.Content>
+            <p style={{ fontFamily: "Verdana " }}>
+              Thanks for reaching out to me! I'm excited to hear from you, and
+              I'll get back to you as soon as I can. Enjoy MyPortfolio!
+              <br />
+              <br />- Syd
+            </p>
+          </Modal.Content>
+        </Modal>
       </Form>
     );
   }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Header, Modal, Icon } from "semantic-ui-react";
+import { Container, Header, Modal, Divider } from "semantic-ui-react";
 
 const ads = [
   {
@@ -43,7 +43,8 @@ const ads = [
 const FakeAds = () => {
   return (
     <>
-      <p>Sponsored Links</p>
+      <p style={{ textAlign: "right" }}>Sponsored Links</p>
+      <hr />
       {ads.map(ad => {
         return (
           <>
