@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import SendEmail from "../containers/SendEmail";
 import FakeAds from "../containers/FakeAds";
+import { FakeAd } from "../screenshots/FakeAd.jpg";
+
 import FakeMessageBar from "../containers/FakeMessageBar";
-import { Grid, Segment, Header } from "semantic-ui-react";
+import { Grid, Segment, Header, Image } from "semantic-ui-react";
+import MoreFakeAds from "../containers/MoreFakeAds";
 
 export default class Message extends Component {
   constructor() {
@@ -26,6 +29,7 @@ export default class Message extends Component {
           <Grid.Column width={3} style={{ paddingRight: "0px" }}>
             <Segment basic>
               <FakeMessageBar />
+              <MoreFakeAds />
             </Segment>
           </Grid.Column>
           <Grid.Column

@@ -71,6 +71,7 @@
 }
 
 #logos {
+  background-color: white;
   font-family: Verdana;
   max-height: 60px;
   margin-left: auto;
@@ -154,7 +155,7 @@
 }
 
 #composeButton {
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: #f7de4d;
   font-family: Verdana;
   font-size: small;
@@ -173,4 +174,17 @@
 #imageicons {
   margin-bottom: 0px;
   margin-right: 0px;
+}
+
+#warning {
+  border-radius: 0px;
+  text-align: center;
+  font-family: Verdana;
+  background-color: #f6f7cd;
+  margin-top: 14px;
+}
+
+#top8 {
+  max-width: 100px;
+  box-shadow: none !important;
 }

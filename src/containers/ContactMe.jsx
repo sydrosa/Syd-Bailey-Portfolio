@@ -36,9 +36,9 @@ const ContactMe = () => {
           </Grid.Column>
           <Grid.Column>
             <Image src={forwardmessageicon} floated="left" id="imageicons" />
-            <p floated="right">Forward Profile</p>
+            <p floated="right">Forward</p>
             <Image src={bookmarkicon} floated="left" id="imageicons" />
-            <p floated="right">Bookmark Page</p>
+            <p floated="right">Bookmark</p>
           </Grid.Column>
         </Grid>
       </Segment>

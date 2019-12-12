@@ -34,7 +34,10 @@ class Navbar extends Component {
   };
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
-  handleIconClick = e => {};
+  handleClick = e => {
+    e.preventDefault();
+
+  }
 
   render() {
     const { activeItem } = this.state;
@@ -78,18 +81,11 @@ class Navbar extends Component {
             </p>
             <p style={{ margin: "0px", whiteSpace: "nowrap" }}>
               <b>Mood: </b>
-              {this.state.mood}{" "}
-              {/* <Dropdown>
-              <Icon name={this.state.icon} />
-              {icons.map(icon => {
-                return (
-                  <Dropdown.Item>
-                    <Icon name={icon} />
-                  </Dropdown.Item>
-                );
-              })}
-            </Dropdown> */}
-              <Link>Change here.</Link>
+              {/* {
+                if (this.state.mood === "")
+              }
+              {this.state.mood}{" "} */}
+              <Link onClick={this.handleClick}>Change here.</Link>
             </p>
           </div>
         </Segment>
