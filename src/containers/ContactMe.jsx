@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Segment, Grid, Image, Icon } from "semantic-ui-react";
 import forwardmessageicon from "../icons/forwardmsgicon.png";
-// import linkedinmessageicon from "../icons/linkedinmsgicon.png";
 import bookmarkicon from "../icons/bookmarkicon.png";
 
 const ContactMe = () => {

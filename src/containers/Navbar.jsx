@@ -75,7 +75,7 @@ class Navbar extends Component {
             <Image src={smiling} floated="left" />
             <p style={{ margin: "0px" }}>
               <b>Status: </b>
-              <i>Looking to hire Syd for my org.</i>
+              <i>Hiring!</i>
             </p>
             <p style={{ margin: "0px", whiteSpace: "nowrap" }}>
               <b>Mood: </b>
