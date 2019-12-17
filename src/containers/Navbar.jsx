@@ -3,28 +3,27 @@ import {
   Menu,
   Segment,
   Header,
-  Image,
-  Dropdown,
-  Icon
+  Image
+  // Icon
 } from "semantic-ui-react";
 import { Link, NavLink, withRouter } from "react-router-dom";
 import whitemyspace from "../icons/whitemyspace.png";
 import smiling from "../icons/smiling.png";
 
-const icons = [
-  "smile",
-  "heart",
-  "eye",
-  "hand peace",
-  "meh",
-  "magic",
-  "thumbs up",
-  "thumbs down",
-  "trophy",
-  "bomb",
-  "beer",
-  "map pin"
-];
+// const icons = [
+//   "smile",
+//   "heart",
+//   "eye",
+//   "hand peace",
+//   "meh",
+//   "magic",
+//   "thumbs up",
+//   "thumbs down",
+//   "trophy",
+//   "bomb",
+//   "beer",
+//   "map pin"
+// ];
 
 class Navbar extends Component {
   state = {
@@ -34,7 +33,9 @@ class Navbar extends Component {
   };
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
-  handleIconClick = e => {};
+  handleClick = e => {
+    e.preventDefault();
+  };
 
   render() {
     const { activeItem } = this.state;
@@ -78,18 +79,11 @@ class Navbar extends Component {
             </p>
             <p style={{ margin: "0px", whiteSpace: "nowrap" }}>
               <b>Mood: </b>
-              {this.state.mood}{" "}
-              {/* <Dropdown>
-              <Icon name={this.state.icon} />
-              {icons.map(icon => {
-                return (
-                  <Dropdown.Item>
-                    <Icon name={icon} />
-                  </Dropdown.Item>
-                );
-              })}
-            </Dropdown> */}
-              <Link>Change here.</Link>
+              {/* {
+                if (this.state.mood === "")
+              }
+              {this.state.mood}{" "} */}
+              <Link onClick={this.handleClick}>Change here.</Link>
             </p>
           </div>
         </Segment>

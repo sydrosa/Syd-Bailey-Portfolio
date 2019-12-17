@@ -4,33 +4,23 @@ import { Container, Header, Modal } from "semantic-ui-react";
 
 const ads = [
   {
-    title: "Miracle Mic",
+    title: "Cherry Glazerr Bombs",
     description:
-      "Phoenix pop punk band heard on RockIt2Me International, Vol 2.",
-    website: "https://www.miraclemicmusic.com"
+      "Take your next relaxing bath to the next level with one of these lush bath bombs!",
+    website: "https://cherrybomb.com"
   },
   {
-    title: "The April Lasagna Quiz",
+    title: "Taxes? What are those?",
     description:
-      "Hey! Hey! You! You! Thank you know about April Lasagna? Take the quiz to find out.",
-    website: "https://www.aprillasagnaquiz.com"
-  },
-  {
-    title: "Hysteria at the Party?",
-    description: "Like Panic at the Disco, but even more wild!",
-    website: "https://www.hysteriaattheparty.com"
-  },
-  {
-    title: "Gives You Heck",
-    description:
-      "Watch this All American Rejects cover band next week in Tampa!",
-    website: "https://www.givesyouheck.com"
+      "Up your knowledge of your taxes before the season is upon us!",
+    website: "https://www.doyourtaxesright.com"
   }
 ];
 
-const FakeAds = () => {
+const MoreFakeAds = () => {
   return (
     <>
+      <br />
       <p style={{ textAlign: "right" }}>Sponsored Links</p>
       <hr />
       {ads.map((ad, index) => {
@@ -72,7 +62,7 @@ const FakeAds = () => {
                 }
                 closeIcon
               >
-                <Header icon="bullhorn" content="Oops" />
+                <Header icon="bullhorn" content="Oops!" />
                 <Modal.Content>
                   <p>
                     Unfortunately, these aren't real ads. They look like it,
@@ -90,5 +80,4 @@ const FakeAds = () => {
     </>
   );
 };
-
-export default FakeAds;
+export default MoreFakeAds;

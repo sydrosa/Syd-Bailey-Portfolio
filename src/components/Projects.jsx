@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Item, Label, Image, Header, Button, Icon } from "semantic-ui-react";
+import { Item, Image, Header, Button, Icon } from "semantic-ui-react";
 import bejeweled from "../icons/bejeweled.png";
 import mafiawars from "../icons/mafiawars.jpg";
 import farmville from "../icons/farmville.jpeg";
@@ -37,13 +37,16 @@ export default class Projects extends Component {
       }
     ];
     return (
-      <div id="mainpage" style={{ paddingLeft: "20px", paddingRight: "20px" }}>
+      <div
+        id="mainpage"
+        style={{ paddingLeft: "20px", paddingRight: "20px", paddingTop: "2%" }}
+      >
         <Header
           style={{
             fontFamily: "Verdana"
           }}
         >
-          <b>Apps</b>
+          <b>Syd's Apps</b>
         </Header>
         <Image.Group size="medium">
           <Image src={bejeweled} />

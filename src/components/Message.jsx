@@ -3,29 +3,27 @@ import SendEmail from "../containers/SendEmail";
 import FakeAds from "../containers/FakeAds";
 import FakeMessageBar from "../containers/FakeMessageBar";
 import { Grid, Segment, Header } from "semantic-ui-react";
+import MoreFakeAds from "../containers/MoreFakeAds";
 
 export default class Message extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
-      <div id="mainpage">
+      <div
+        id="mainpage"
+        style={{ paddingLeft: "20px", paddingRight: "20px", paddingTop: "2%" }}
+      >
+        <Header
+          style={{
+            fontFamily: "Verdana"
+          }}
+        >
+          <b>Mail Center</b>
+        </Header>
         <Grid>
-          <Grid.Row>
-            <Header
-              style={{
-                fontFamily: "Verdana"
-              }}
-            >
-              <b>Mail Center</b>
-            </Header>
-          </Grid.Row>
-
           <Grid.Column width={3} style={{ paddingRight: "0px" }}>
             <Segment basic>
               <FakeMessageBar />
+              <MoreFakeAds />
             </Segment>
           </Grid.Column>
           <Grid.Column

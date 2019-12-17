@@ -11,7 +11,7 @@ import rentTheRunwayLogo from "../icons/rtr.png";
 
 const dreamCompanies = [
   {
-    name: "Rent the Runway",
+    name: "RTR",
     website: "https://www.renttherunway.com",
     logo: rentTheRunwayLogo
   },
@@ -45,29 +45,21 @@ const dreamCompanies = [
 ];
 
 export default class Top8 extends Component {
-  constructor() {
-    super();
-  }
   render() {
     return (
       <>
         <Header id="myspace">Syd's Dream Company Space (Top 8)</Header>
-        <Card.Group itemsPerRow={4}>
+        <Card.Group itemsPerRow={4} style={{ marginBottom: "15px" }}>
           {dreamCompanies.map((company, index) => {
             return (
               <>
-                <Card
-                  style={{
-                    borderStyle: "solid",
-                    borderWidth: "1px",
-                    borderRadius: "0px",
-                    borderColor: "white"
-                  }}
-                >
-                  <Header id="friends">{company.name}</Header>
-                  <Card.Content>
-                    <Image src={company.logo} id="logos" key={index} />
-                  </Card.Content>
+                <Card basic id="top8">
+                  <Header id="friends">
+                    <a href={company.website} style={{ color: "000000" }}>
+                      {company.name}
+                    </a>
+                  </Header>
+                  <Image src={company.logo} id="logos" key={index} />
                 </Card>
               </>
             );

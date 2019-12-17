@@ -1,5 +1,5 @@
 import React from "react";
-import { Segment, Dimmer, Loader, Image, Modal } from "semantic-ui-react";
+import { Segment, Loader, Modal } from "semantic-ui-react";
 
 const BlogLoading = () => {
   return (
