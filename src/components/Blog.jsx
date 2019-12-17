@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import BlogLoading from "../containers/BlogLoading";
 import BlogContainer from "../containers/BlogContainer";
+import { Header } from "semantic-ui-react";
 import _ from "lodash";
 
 export default class BlogSnippet extends Component {
@@ -27,7 +28,17 @@ export default class BlogSnippet extends Component {
 
   render() {
     return (
-      <div id="mainpage">
+      <div
+        id="mainpage"
+      >
+        <Header
+          style={{
+            fontFamily: "Verdana", paddingLeft: "20px", paddingRight: "20px", paddingTop: "2%"
+          }}
+        >
+          <b>Syd's Blog</b>
+        </Header>
+
         {_.isEmpty(this.state.blogs) ? (
           <BlogLoading />
         ) : (

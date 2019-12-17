@@ -3,28 +3,27 @@ import {
   Menu,
   Segment,
   Header,
-  Image,
-  Dropdown,
-  Icon
+  Image
+  // Icon
 } from "semantic-ui-react";
 import { Link, NavLink, withRouter } from "react-router-dom";
 import whitemyspace from "../icons/whitemyspace.png";
 import smiling from "../icons/smiling.png";
 
-const icons = [
-  "smile",
-  "heart",
-  "eye",
-  "hand peace",
-  "meh",
-  "magic",
-  "thumbs up",
-  "thumbs down",
-  "trophy",
-  "bomb",
-  "beer",
-  "map pin"
-];
+// const icons = [
+//   "smile",
+//   "heart",
+//   "eye",
+//   "hand peace",
+//   "meh",
+//   "magic",
+//   "thumbs up",
+//   "thumbs down",
+//   "trophy",
+//   "bomb",
+//   "beer",
+//   "map pin"
+// ];
 
 class Navbar extends Component {
   state = {
@@ -36,8 +35,7 @@ class Navbar extends Component {
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
   handleClick = e => {
     e.preventDefault();
-
-  }
+  };
 
   render() {
     const { activeItem } = this.state;

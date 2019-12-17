@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Header, Card, Image, Segment } from "semantic-ui-react";
+import { Header, Card, Image } from "semantic-ui-react";
 import appleLogo from "../icons/apple.png";
 import boxyCharmLogo from "../icons/boxycharm.jpg";
 import ipsyLogo from "../icons/ipsy.png";
@@ -45,9 +45,6 @@ const dreamCompanies = [
 ];
 
 export default class Top8 extends Component {
-  constructor() {
-    super();
-  }
   render() {
     return (
       <>

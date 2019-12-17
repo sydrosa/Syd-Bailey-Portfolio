@@ -25,7 +25,6 @@ export default class BlogSnippet extends Component {
   }
 
   render() {
-    console.log(_.isEmpty(this.state.blogs));
     return (
       <>
         <Header as="h3" style={{ fontFamily: "Verdana " }}>
@@ -37,7 +36,7 @@ export default class BlogSnippet extends Component {
         ) : (
           <>
             <p style={{ fontFamily: "Verdana" }}>
-              {this.state.blogs[0].title}(
+              {this.state.blogs[0].title} (
               <a href={this.state.blogs[0].link}>Read More</a>)
             </p>
           </>

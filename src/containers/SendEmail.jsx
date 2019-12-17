@@ -78,7 +78,7 @@ export default class SendEmail extends Component {
                   image
                   style={{ fontFamily: "Verdana", backgroundColor: "#c4dff0" }}
                 >
-                  <img src={sydheadshot} />
+                  <img src={sydheadshot} alt="sydheadshot" />
                   Syd Bailey
                 </Label>
               </Grid.Column>

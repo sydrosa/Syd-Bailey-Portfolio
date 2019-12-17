@@ -2,13 +2,22 @@ import React from "react";
 import { Container, Header, Image } from "semantic-ui-react";
 
 const BlogContainer = props => {
+  function fixTime(timedate) {
+    let currentDate = new Date(timedate);
+    let date = currentDate.getDate();
+    let month = currentDate.getMonth(); //Be careful! January is 0 not 1
+    let year = currentDate.getFullYear();
+    let dateString = month + 1 + "/" + date + "/" + year;
+    return dateString;
+  }
+
   return (
     <>
       {props.blogs.map(blog => {
         return (
           <>
             <Header id="myspace" style={{ paddingBottom: "10px" }}>
-              {blog.pubDate}
+              {fixTime(blog.pubDate)}
             </Header>
             <Container>
               <Header as="h4" id="title">
@@ -17,7 +26,9 @@ const BlogContainer = props => {
               <Image src={blog.thumbnail} size="medium" floated="left" />
               <p style={{ minHeight: "200px" }}>
                 {props.stripHtml(blog.content.substring(0, 500))}
-                <a href={blog.link}>.....</a>
+                <a href={blog.link}>
+                  <b>(.....)</b>
+                </a>
               </p>
             </Container>
           </>

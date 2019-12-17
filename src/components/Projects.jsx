@@ -37,13 +37,16 @@ export default class Projects extends Component {
       }
     ];
     return (
-      <div id="mainpage" style={{ paddingLeft: "20px", paddingRight: "20px" }}>
+      <div
+        id="mainpage"
+        style={{ paddingLeft: "20px", paddingRight: "20px", paddingTop: "2%" }}
+      >
         <Header
           style={{
             fontFamily: "Verdana"
           }}
         >
-          <b>Apps</b>
+          <b>Syd's Apps</b>
         </Header>
         <Image.Group size="medium">
           <Image src={bejeweled} />
