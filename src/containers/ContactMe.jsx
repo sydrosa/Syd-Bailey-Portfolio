@@ -32,7 +32,7 @@ const ContactMe = () => {
     p.appendChild(link);
     div.appendChild(p);
 
-    return div;
+    return;
   }
 
   return (
