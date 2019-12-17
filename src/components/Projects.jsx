@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Link } from "react";
 import { Item, Image, Header, Button, Icon } from "semantic-ui-react";
 import bejeweled from "../icons/bejeweled.png";
 import mafiawars from "../icons/mafiawars.jpg";
