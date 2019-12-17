@@ -15,24 +15,24 @@ const ContactMe = () => {
         "&subject=" +
         subject +
         "&body=" +
-        emailBody()
+        "A young software engineer, Syd Bailey, made this incredible portfolio. Can you guess what she's paying homage too? I've copy/pasted the link below -- click on 'Messages' at the top to send her a message!        http://syd-bailey-resume.herokuapp.com"
     );
   }
 
-  function emailBody() {
-    let div = document.createElement("div");
-    let p = document.createElement("p");
-    let link = document.createElement("a");
-    let text = document.createTextNode(
-      "A young software engineer, Syd Bailey, made this incredible portfolio. Can you guess what she's paying homage too? I've copy/pasted the link below -- click on 'Messages' at the top to send her a message!"
-    );
-    link.setAttribute("href", "http://syd-bailey-resume.herokuapp.com");
-    p.appendChild(text);
-    p.appendChild(link);
-    div.appendChild(p);
+  // function emailBody() {
+  //   let div = document.createElement("div");
+  //   let p = document.createElement("p");
+  //   let link = document.createElement("a");
+  //   let text = document.createTextNode(
+  //     "A young software engineer, Syd Bailey, made this incredible portfolio. Can you guess what she's paying homage too? I've copy/pasted the link below -- click on 'Messages' at the top to send her a message!"
+  //   );
+  //   link.setAttribute("href", "http://syd-bailey-resume.herokuapp.com");
+  //   p.appendChild(text);
+  //   p.appendChild(link);
+  //   div.appendChild(p);
 
-    return div;
-  }
+  //   return div;
+  // }
 
   return (
     <div>
