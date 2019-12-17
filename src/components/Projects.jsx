@@ -68,7 +68,7 @@ export default class Projects extends Component {
                   </Item.Meta>
                   <Item.Description>{project.description}</Item.Description>
                   <Item.Extra>
-                    <Button>
+                    <Button as={Link} to={project.link} id="sendButton">
                       <Icon name="github" />
                       Repository
                     </Button>
