@@ -28,7 +28,8 @@ export default class BlogSnippet extends Component {
     return (
       <>
         <Header as="h3" style={{ fontFamily: "Verdana " }}>
-          Syd's Latest Blog Entries [<a href="/">Subscribe to this Blog]</a>
+          Syd's Latest Blog Entries [
+          <a href="https://medium.com/@sydabailey">Subscribe to this Blog]</a>
         </Header>
 
         {_.isEmpty(this.state.blogs) ? (

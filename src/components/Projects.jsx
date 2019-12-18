@@ -8,6 +8,7 @@ import lizzbians from "../screenshots/lizzbians.gif";
 import RouletteLogo from "../screenshots/RouletteLogo.svg";
 
 export default class Projects extends Component {
+  handleClick = link => {};
   render() {
     const projects = [
       {
@@ -68,7 +69,7 @@ export default class Projects extends Component {
                   </Item.Meta>
                   <Item.Description>{project.description}</Item.Description>
                   <Item.Extra>
-                    <Button as={Link} to={project.link} id="sendButton">
+                    <Button a href={project.link} id="sendButton">
                       <Icon name="github" />
                       Repository
                     </Button>

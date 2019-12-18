@@ -21,7 +21,7 @@ const ProfilePic = () => {
       </Modal>
 
       <p style={{ fontSize: "12px", marginBottom: "10%" }}>
-        "Brooklyn native, wildly compassionate, lover of cats, creater of apps,
+        "Brooklyn native, wildly creative, lover of cats, creater of apps,
         writer of code."
         <br />
         <br />
