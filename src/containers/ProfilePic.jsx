@@ -7,10 +7,17 @@ const ProfilePic = () => {
     <>
       <h1 style={{ fontFamily: "Verdana" }}>Syd Bailey</h1>
       <Modal
+        as="a"
+        href="#"
         trigger={
-          <Image src={sydheadshot} style={{ maxWidth: "50%" }} floated="left" />
+          <Image
+            src={sydheadshot}
+            style={{ maxWidth: "50%", cursor: "pointer" }}
+            floated="left"
+          />
         }
         closeIcon
+        id="imagelink"
       >
         <Modal.Content image>
           <Image

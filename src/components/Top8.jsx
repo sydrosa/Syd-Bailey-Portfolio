@@ -3,13 +3,18 @@ import { Header, Card, Image } from "semantic-ui-react";
 import appleLogo from "../icons/apple.png";
 import boxyCharmLogo from "../icons/boxycharm.jpg";
 import ipsyLogo from "../icons/ipsy.png";
-import facebookLogo from "../icons/facebook.png";
+import etsyLogo from "../icons/etsy.svg";
 import indeedLogo from "../icons/indeed.png";
 import twitterLogo from "../icons/twitter.png";
 import buzzfeedLogo from "../icons/buzzfeed.png";
 import rentTheRunwayLogo from "../icons/rtr.png";
 
 const dreamCompanies = [
+  {
+    name: "Etsy",
+    website: "https://www.etsy.com",
+    logo: etsyLogo
+  },
   {
     name: "RTR",
     website: "https://www.renttherunway.com",
@@ -29,11 +34,6 @@ const dreamCompanies = [
     name: "Indeed",
     website: "https://www.indeed.com",
     logo: indeedLogo
-  },
-  {
-    name: "Facebook",
-    website: "https://www.facebook.com",
-    logo: facebookLogo
   },
   { name: "Apple", website: "https://www.apple.com", logo: appleLogo },
   {

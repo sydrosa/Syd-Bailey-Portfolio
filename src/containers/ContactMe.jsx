@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Segment, Grid, Image, Icon } from "semantic-ui-react";
+import { Segment, Grid, Image, Icon, Modal, Header } from "semantic-ui-react";
 import forwardmessageicon from "../icons/forwardmsgicon.png";
 import bookmarkicon from "../icons/bookmarkicon.png";
 
@@ -17,7 +17,7 @@ const ContactMe = () => {
         "&subject=" +
         subject +
         "&body=" +
-        `${emailBody()}`
+        `${emailBody}`
       // "A young software engineer, Syd Bailey, made this incredible portfolio. Can you guess what she's paying homage too? I've copy/pasted the link below -- click on 'Messages' at the top to send her a message!     http://syd-bailey-resume.herokuapp.com"
     );
   }
@@ -30,13 +30,11 @@ const ContactMe = () => {
     let text = document.createTextNode(
       "A young software engineer, Syd Bailey, made this incredible portfolio. Can you guess what she's paying homage too? I've copy/pasted the link below -- click on 'Messages' at the top to send her a message!"
     );
-
     p.appendChild(text);
     p.appendChild(link);
     div.appendChild(p);
     div.setAttribute("id", "div");
     console.log(div);
-
     return div.innerHTML;
   }
 
@@ -45,7 +43,11 @@ const ContactMe = () => {
       <Segment attached="top" id="details">
         <b>Contact Me</b>
       </Segment>
-      <Segment attached="bottom" style={{ fontSize: "12px" }}>
+      <Segment
+        attached="bottom"
+        style={{ fontSize: "12px" }}
+        id="pagecontainer"
+      >
         <Grid columns={2}>
           <Grid.Column>
             <p>
@@ -82,14 +84,29 @@ const ContactMe = () => {
             </p>
             <p>
               <Image src={bookmarkicon} floated="left" id="imageicons" />
-              <Link
-                floated="right"
-                onClick={handleForwarding}
-                style={{ color: "black" }}
+              <Modal
+                trigger={
+                  <Link
+                    floated="right"
+                    onClick={handleForwarding}
+                    style={{ color: "black" }}
+                  >
+                    {" "}
+                    Bookmark
+                  </Link>
+                }
+                closeIcon
               >
-                {" "}
-                Bookmark
-              </Link>
+                <Header icon="star outline" content="Rad!" />
+                <Modal.Content>
+                  <p>
+                    Looks like you want to add me as your favorite -- how kind!
+                    You can 'bookmark' this page by pressing the star icon near
+                    the url in your browser. Otherwise, head over to the
+                    'messages' tab and let me know why I'm your fave!
+                  </p>
+                </Modal.Content>
+              </Modal>
             </p>
           </Grid.Column>
         </Grid>
