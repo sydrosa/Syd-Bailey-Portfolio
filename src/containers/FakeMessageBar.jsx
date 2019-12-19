@@ -42,13 +42,13 @@ const FakeMessageBar = () => {
               }
               closeIcon
             >
-              <Header icon="bullhorn" content="Oops!!" />
+              <Header icon="bullhorn" content="Oops!" />
               <Modal.Content>
                 <p>
                   Unfortunately, these aren't real links. They look like it,
                   though! Send me a message and ask me how I created these fake
-                  links and a replica of one the most famous mid 2000's
-                  social sites!
+                  links and a replica of one the most famous mid 2000's social
+                  sites!
                 </p>
               </Modal.Content>
             </Modal>
@@ -71,8 +71,8 @@ const FakeMessageBar = () => {
                 <p>
                   Unfortunately, these aren't real links. They look like it,
                   though! Send me a message and ask me how I created these fake
-                  links and a replica of one the most famous mid 2000's
-                  social sites!
+                  links and a replica of one the most famous mid 2000's social
+                  sites!
                 </p>
               </Modal.Content>
             </Modal>
@@ -95,8 +95,8 @@ const FakeMessageBar = () => {
                 <p>
                   Unfortunately, these aren't real links. They look like it,
                   though! Send me a message and ask me how I created these fake
-                  links and a replica of one the most famous mid 2000's
-                  social sites!
+                  links and a replica of one the most famous mid 2000's social
+                  sites!
                 </p>
               </Modal.Content>
             </Modal>
@@ -119,8 +119,8 @@ const FakeMessageBar = () => {
                 <p>
                   Unfortunately, these aren't real links. They look like it,
                   though! Send me a message and ask me how I created these fake
-                  links and a replica of one the most famous mid 2000's
-                  social sites!
+                  links and a replica of one the most famous mid 2000's social
+                  sites!
                 </p>
               </Modal.Content>
             </Modal>
@@ -143,8 +143,8 @@ const FakeMessageBar = () => {
                 <p>
                   Unfortunately, these aren't real links. They look like it,
                   though! Send me a message and ask me how I created these fake
-                  links and a replica of one the most famous mid 2000's
-                  social sites!
+                  links and a replica of one the most famous mid 2000's social
+                  sites!
                 </p>
               </Modal.Content>
             </Modal>
@@ -167,8 +167,8 @@ const FakeMessageBar = () => {
                 <p>
                   Unfortunately, these aren't real links. They look like it,
                   though! Send me a message and ask me how I created these fake
-                  links and a replica of one the most famous mid 2000's
-                  social sites!
+                  links and a replica of one the most famous mid 2000's social
+                  sites!
                 </p>
               </Modal.Content>
             </Modal>
@@ -191,8 +191,8 @@ const FakeMessageBar = () => {
                 <p>
                   Unfortunately, these aren't real links. They look like it,
                   though! Send me a message and ask me how I created these fake
-                  links and a replica of one the most famous mid 2000's
-                  social sites!
+                  links and a replica of one the most famous mid 2000's social
+                  sites!
                 </p>
               </Modal.Content>
             </Modal>

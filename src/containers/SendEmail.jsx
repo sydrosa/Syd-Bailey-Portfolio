@@ -90,7 +90,7 @@ export default class SendEmail extends Component {
                 </p>
               </Grid.Column>
               <Grid.Column width={12}>
-                <input name="from" onChange={this.handleChange} />
+                <input required name="from" onChange={this.handleChange} />
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
@@ -99,6 +99,7 @@ export default class SendEmail extends Component {
               </Grid.Column>
               <Grid.Column width={12}>
                 <input
+                  required
                   style={{ fontFamily: "Verdana" }}
                   placeholder="Syd, we want to hire you!"
                   name="subject"
@@ -112,6 +113,7 @@ export default class SendEmail extends Component {
               </Grid.Column>
               <Grid.Column width={12}>
                 <TextArea
+                  required
                   placeholder="
                   ----------- Original Message -----------
                   Hope you're enjoying this page -- it was made to bring you back to your

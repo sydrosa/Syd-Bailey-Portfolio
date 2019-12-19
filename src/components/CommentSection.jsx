@@ -7,25 +7,28 @@ const comments = [
     image: Faker.image.avatar(),
     datetime: "4/12/2008 10:53 AM",
     fullName: Faker.name.firstName(),
-    content: "Some stuff will go here. Random stuff. Comment stuff."
+    content:
+      "Thankies 4 the custom template you made me for my profile! Ur gunna make an awesome programmer 1 day :P ;)"
   },
   {
     image: Faker.image.avatar(),
     datetime: "4/01/2008 11:02 AM",
     fullName: Faker.name.firstName(),
-    content: "Some stuff will go here. Random stuff. Comment stuff."
+    content:
+      "Syd -- I removed you from my top 8. Hope you're not mad.... april fools!!!"
   },
   {
     image: Faker.image.avatar(),
     datetime: "3/31/2008 2:17 PM",
     fullName: Faker.name.firstName(),
-    content: "Some stuff will go here. Random stuff. Comment stuff."
+    content:
+      "finally starting to warm up!!! we should plan a trip to an island somewhere... whatdya thinkin??!"
   },
   {
     image: Faker.image.avatar(),
-    datetime: Faker.date.weekday(),
+    datetime: "3/14/2008 4:02 PM",
     fullName: Faker.name.firstName(),
-    content: "Some stuff will go here. Random stuff. Comment stuff."
+    content: "tell chels i said HBD!! can't find her on here."
   },
   {
     image: Faker.image.avatar(),
@@ -45,7 +48,8 @@ const comments = [
     image: Faker.image.avatar(),
     datetime: "2/02/2008 2:22 PM",
     fullName: Faker.name.firstName(),
-    content: "Some stuff will go here. Random stuff. Comment stuff."
+    content:
+      "can you make it to that Kings of Leon concert next week? I hear it'll be a blast."
   },
   {
     image: Faker.image.avatar(),
@@ -59,7 +63,7 @@ export default class CommentSection extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header id="myspace">Syd's Professional Recommendations</Header>
+        <Header id="myspace">Syd's Comments</Header>
         <Grid celled>
           {comments.map((comment, index) => {
             return (
