@@ -74,10 +74,10 @@ export default class Projects extends Component {
                     <Icon name="star" color="yellow" />
                     <Icon name="star" color="yellow" />
                     <Icon name="star" color="yellow" />
-                    <button a href={project.link} id="sendButton">
+                    <Button a href={project.link} id="sendButton">
                       <Icon name="github" />
                       Repository
-                    </button>
+                    </Button>
                   </Item.Extra>
                 </Item.Content>
               </Item>

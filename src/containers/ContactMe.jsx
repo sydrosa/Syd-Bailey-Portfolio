@@ -50,7 +50,7 @@ const ContactMe = () => {
       >
         <Grid columns={2}>
           <Grid.Column>
-            <p>
+            <p style={{ padding: "5%", marginBottom: "0" }}>
               <a
                 href="https://www.github.com/sydbails"
                 style={{ color: "black" }}
@@ -60,7 +60,7 @@ const ContactMe = () => {
               </a>
             </p>
 
-            <p>
+            <p style={{ padding: "5%", marginBottom: "0" }}>
               <a
                 href="https://www.linkedin.com/in/sydbailey"
                 style={{ color: "black" }}
@@ -71,7 +71,7 @@ const ContactMe = () => {
             </p>
           </Grid.Column>
           <Grid.Column>
-            <p>
+            <p style={{ padding: "5%", marginBottom: "0" }}>
               <Image src={forwardmessageicon} floated="left" id="imageicons" />
               <Link
                 floated="right"
@@ -82,15 +82,11 @@ const ContactMe = () => {
                 Forward
               </Link>
             </p>
-            <p>
+            <p style={{ padding: "5%", marginBottom: "0" }}>
               <Image src={bookmarkicon} floated="left" id="imageicons" />
               <Modal
                 trigger={
-                  <Link
-                    floated="right"
-                    onClick={handleForwarding}
-                    style={{ color: "black" }}
-                  >
+                  <Link floated="right" style={{ color: "black" }}>
                     {" "}
                     Bookmark
                   </Link>
