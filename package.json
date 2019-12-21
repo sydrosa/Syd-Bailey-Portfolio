@@ -2,10 +2,14 @@
   "name": "syd-bailey-portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "13.1.x"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "bufferutil": "^4.0.1",
     "emailjs-com": "^2.4.1",
     "express": "^4.17.1",
     "faker": "^4.1.0",
@@ -14,10 +18,12 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
     "request": "^2.88.0",
-    "semantic-ui-react": "^0.88.1"
+    "semantic-ui-react": "^0.88.1",
+    "utf-8-validate": "^5.0.2",
+    "ws": "^7.2.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
