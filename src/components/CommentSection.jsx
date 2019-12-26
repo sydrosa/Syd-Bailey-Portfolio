@@ -35,7 +35,7 @@ const comments = [
     datetime: "3/13/2008 8:07 AM",
     fullName: Faker.name.firstName(),
     content:
-      "Am I going to see you at yoga this morning? I've been working on my King Pigeon pose and I think you're going to be *really* impressed lolol <3 <3 see you!"
+      "Am I going to see you at yoga this morning? I've been working on my crow pose and I think you're going to be *really* impressed lolol <3 <3 see you!"
   },
   {
     image: Faker.image.avatar(),
