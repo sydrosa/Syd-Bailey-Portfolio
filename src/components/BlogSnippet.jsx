@@ -25,6 +25,7 @@ export default class BlogSnippet extends Component {
   }
 
   render() {
+    console.log("this is the protocol", window.location.protocol);
     return (
       <>
         <Header as="h3" style={{ fontFamily: "Verdana " }}>
