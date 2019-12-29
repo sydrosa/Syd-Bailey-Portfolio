@@ -17,7 +17,7 @@ export default class BlogSnippet extends Component {
   componentDidMount() {
     console.log("this is the protocol, #2=>", window.location.protocol);
     fetch(
-      "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40sydabailey%2F"
+      "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40sydbails%2F"
     )
       .then(resp => resp.json())
       .then(resp => {
