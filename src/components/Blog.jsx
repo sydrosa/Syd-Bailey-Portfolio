@@ -12,7 +12,7 @@ export default class BlogSnippet extends Component {
   }
   componentDidMount() {
     fetch(
-      "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40sydabailey%2F"
+      "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40sydbails%2F"
     )
       .then(resp => resp.json())
       .then(resp => {
@@ -28,12 +28,13 @@ export default class BlogSnippet extends Component {
 
   render() {
     return (
-      <div
-        id="mainpage"
-      >
+      <div id="mainpage">
         <Header
           style={{
-            fontFamily: "Verdana", paddingLeft: "20px", paddingRight: "20px", paddingTop: "2%"
+            fontFamily: "Verdana",
+            paddingLeft: "20px",
+            paddingRight: "20px",
+            paddingTop: "2%"
           }}
         >
           <b>Syd's Blog</b>
