@@ -16,7 +16,7 @@ export default class Home extends Component {
     return (
       <div id="mainpage">
         <Grid>
-          <Grid.Column width={6}>
+          <Grid.Column mobile={16} tablet={16} computer={6}>
             <Segment basic>
               <ProfilePic />
               <ContactMe />
@@ -24,7 +24,7 @@ export default class Home extends Component {
               <Details />
             </Segment>
           </Grid.Column>
-          <Grid.Column width={10}>
+          <Grid.Column mobile={16} tablet={16} computer={10}>
             <Segment basic>
               <Network />
               <BlogSnippet />

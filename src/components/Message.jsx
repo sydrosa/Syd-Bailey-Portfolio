@@ -20,14 +20,21 @@ export default class Message extends Component {
           <b>Mail Center</b>
         </Header>
         <Grid>
-          <Grid.Column width={3} style={{ paddingRight: "0px" }}>
+          <Grid.Column
+            mobile={16}
+            tablet={16}
+            computer={3}
+            style={{ paddingRight: "0px" }}
+          >
             <Segment basic>
               <FakeMessageBar />
               <MoreFakeAds />
             </Segment>
           </Grid.Column>
           <Grid.Column
-            width={10}
+            mobile={16}
+            tablet={16}
+            computer={10}
             style={{ paddingLeft: "0px", paddingRight: "0px" }}
           >
             <Segment
@@ -41,7 +48,12 @@ export default class Message extends Component {
               <SendEmail />
             </Segment>
           </Grid.Column>
-          <Grid.Column width={3} style={{ paddingLeft: "0px" }}>
+          <Grid.Column
+            mobile={16}
+            tablet={16}
+            computer={3}
+            style={{ paddingLeft: "0px" }}
+          >
             <Segment basic>
               <FakeAds />
             </Segment>
