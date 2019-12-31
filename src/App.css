@@ -8,6 +8,17 @@
   pointer-events: none;
 }
 
+@media only screen and (max-width: 767px) {
+  [class*="mobile hidden"],
+  [class*="tablet only"]:not(.mobile),
+  [class*="computer only"]:not(.mobile),
+  [class*="large screen only"]:not(.mobile),
+  [class*="widescreen only"]:not(.mobile),
+  [class*="or lower hidden"] {
+    display: none !important;
+  }
+}
+
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -192,4 +203,10 @@
 
 #top8 {
   box-shadow: none !important;
+}
+
+#contactMe {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }

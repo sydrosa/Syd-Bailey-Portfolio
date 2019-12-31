@@ -39,7 +39,7 @@ const ContactMe = () => {
   }
 
   return (
-    <div>
+    <div id="contactMe">
       <Segment attached="top" id="details">
         <b>Contact Me</b>
       </Segment>
@@ -49,7 +49,7 @@ const ContactMe = () => {
         id="pagecontainer"
       >
         <Grid columns={2}>
-          <Grid.Column>
+          <Grid.Column tablet={8}>
             <p style={{ padding: "5%", marginBottom: "0" }}>
               <a
                 href="https://www.github.com/sydbails"
@@ -70,7 +70,7 @@ const ContactMe = () => {
               </a>
             </p>
           </Grid.Column>
-          <Grid.Column>
+          <Grid.Column tablet={8}>
             <p style={{ padding: "5%", marginBottom: "0" }}>
               <Image src={forwardmessageicon} floated="left" id="imageicons" />
               <Link
