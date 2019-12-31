@@ -27,6 +27,7 @@ export default class BlogSnippet extends Component {
   };
 
   render() {
+    console.log(this.state.blogs);
     return (
       <div id="mainpage">
         <Header
