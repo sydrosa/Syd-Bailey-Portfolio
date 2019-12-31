@@ -3,7 +3,8 @@ import { Container, Header, Image } from "semantic-ui-react";
 
 const BlogContainer = props => {
   function fixTime(timedate) {
-    let currentDate = new Date(timedate);
+    let parsedDate = timedate.replace(/-/g, "/");
+    let currentDate = new Date(parsedDate);
     let date = currentDate.getDate();
     let month = currentDate.getMonth(); //Be careful! January is 0 not 1
     let year = currentDate.getFullYear();
