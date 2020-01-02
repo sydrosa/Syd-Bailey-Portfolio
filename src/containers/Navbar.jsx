@@ -88,6 +88,7 @@ class Navbar extends Component {
               <b>Mood: </b>
               {this.state.mood === true ? (
                 <input
+                  style={{ border: "none" }}
                   placeholder={this.state.mood}
                   type="text"
                   onChange={this.handleChange}
