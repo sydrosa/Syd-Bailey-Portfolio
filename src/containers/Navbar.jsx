@@ -27,14 +27,21 @@ import smiling from "../icons/smiling.png";
 
 class Navbar extends Component {
   state = {
-    mood: "Choose your mood here!",
+    mood: false,
     activeItem: "",
-    currentIcon: "smile"
+    currentMood: "Happy!"
   };
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+
   handleClick = e => {
     e.preventDefault();
+    this.setState({ mood: !this.state.mood });
+  };
+
+  handleChange = e => {
+    e.preventDefault();
+    this.setState({ currentMood: e.target.value });
   };
 
   render() {
@@ -79,11 +86,19 @@ class Navbar extends Component {
             </p>
             <p style={{ margin: "0px", whiteSpace: "nowrap" }}>
               <b>Mood: </b>
-              {/* {
-                if (this.state.mood === "")
-              }
-              {this.state.mood}{" "} */}
-              <Link onClick={this.handleClick}>Change here.</Link>
+              {this.state.mood === true ? (
+                <input
+                  placeholder={this.state.mood}
+                  type="text"
+                  onChange={this.handleChange}
+                />
+              ) : (
+                <i>{this.state.currentMood}</i>
+              )}
+
+              <Link onClick={this.handleClick}>
+                {this.state.mood === true ? " Update." : " Change Here"}
+              </Link>
             </p>
           </div>
         </Segment>
