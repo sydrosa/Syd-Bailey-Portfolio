@@ -25,7 +25,13 @@ const BlogContainer = props => {
                 {blog.title}
               </Header>
               <Image src={blog.thumbnail} size="medium" floated="left" />
-              <p style={{ minHeight: "200px", marginBottom: "10px" }}>
+              <p
+                style={{
+                  minHeight: "200px",
+                  marginBottom: "10px",
+                  overflowWrap: "break-word"
+                }}
+              >
                 {props.stripHtml(blog.content.substring(0, 500))}
                 <a href={blog.link}>
                   <b>(.....)</b>
